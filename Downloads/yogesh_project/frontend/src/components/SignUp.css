@@ -1,0 +1,98 @@
+/* General reset for cross-browser consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container styling for the SignUp layout */
+  .sign-up-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between form and image */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-color: #f5f7fa; /* Light background */
+  }
+  
+  /* Styling for the form container */
+  .form-container {
+    flex: 1; /* Allow the form to grow and fill available space */
+    padding: 40px; /* Padding inside the form */
+    background-color: #a9cbef; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 400px; /* Maximum width for the form */
+  }
+  
+  /* Styling for the image container */
+  .image-container {
+    flex: 1; /* Allow the image to grow and fill available space */
+    display: flex; /* Use flexbox for image alignment */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+  }
+  
+  /* Image styling */
+  .image-container img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners to the image */
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input styling */
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Paragraph styling */
+  p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+  }

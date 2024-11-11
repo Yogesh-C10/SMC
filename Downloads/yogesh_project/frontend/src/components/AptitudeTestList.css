@@ -1,0 +1,78 @@
+/* Container styling */
+/* Title styling */
+.title {
+    margin-top: 100px;
+    font-size: 32px;
+    color: #00509e;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  /* Description styling */
+  .description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+
+.test-list-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Individual test card styling */
+  .test-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .test-details {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .test-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #00509e;
+  }
+  
+  .test-details p {
+    margin: 4px 0;
+    color: #888;
+  }
+  
+  /* Take test button styling */
+  .take-test-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .take-test-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Score display styling */
+  .score-display {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
