@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import axios from 'axios';
+import API from '../services/api';
 import './Test.css';
 
 const questions = [
@@ -30,22 +30,22 @@ export default function TestPage2() {
     });
     setScore(calculatedScore);
     setSubmitted(true);
-
+  
     // Call the API with the score
-    var data = {
+    const data = {
       email: localStorage.getItem('email'),
-      label: "quiz2",
+      label: "quiz1",
       score: calculatedScore
     };
-
-    axios.post('/api/quizmarks/', data)
+  
+    API.post('/api/quizmarks/', data) // Use API instance from api.js
       .then((response) => {
         console.log("API Response:", response.data);
       })
       .catch((error) => {
         console.error("Error submitting score:", error);
       });
-  }, [answers]); // Only recreate handleSubmit when 'answers' changes
+  }, [answers]);
 
   // useEffect for countdown timer and auto-submit
   useEffect(() => {
