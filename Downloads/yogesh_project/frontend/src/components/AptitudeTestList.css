@@ -76,3 +76,115 @@
     color: #333;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .test-list-container {
+      width: 90%;
+    }
+  
+    .test-card {
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .test-details {
+      margin-bottom: 8px;
+      text-align: left;
+    }
+  
+    .take-test-btn {
+      margin-top: 8px;
+    }   
+    
+    .score-display {
+      margin-top: 16px;
+    }
+    
+    .test-card {
+      padding: 12px;
+    } 
+
+    .take-test-btn {
+      padding: 6px 12px;
+    }
+    
+    .score-display {
+      font-size: 16px;
+    }
+    
+    .test-details h3 {
+      font-size: 16px;
+    }
+    
+    .test-details p {
+      font-size: 14px;
+    }
+    
+    .test-card {
+      margin-bottom: 8px;
+    }
+    
+    .take-test-btn {
+      font-size: 12px;
+    }
+    
+    .score-display {
+      margin-top: 12px;
+    }
+    
+    .test-details {
+      font-size: 14px;
+    }
+    
+    .test-details h3 {
+      font-size: 14px;
+    }
+    
+    .test-details p {
+      font-size: 12px;
+    }
+    
+    .take-test-btn {
+      padding: 4px 8px;
+      font-size: 10px;
+    }
+    
+    .score-display {
+      font-size: 12px;
+    }
+    
+    .test-card {
+      margin-bottom: 6px;
+    }
+    
+    .take-test-btn {
+      margin-top: 6px;
+    }
+    
+    .score-display {
+      margin-top: 10px;
+    }
+    
+    .test-details {
+      margin-bottom: 6px;
+    }
+    
+    .test-details h3 {
+      font-size: 12px;
+    }
+    
+    .test-details p {
+      font-size: 10px;
+    }
+    
+    .take-test-btn {
+      padding: 2px 4px;
+      font-size: 8px;
+    }
+    
+    .score-display {
+      font-size: 10px;    
+    }
+    
+  }

@@ -14,7 +14,7 @@
   z-index: -1; /* Place it behind other elements */
   
   /* Background image settings */
-  background-image: url('../asset/Home_.jpeg'); /* Replace with the URL of your background image */
+  background-image: url('../asset/home_background.jpg'); /* Replace with the URL of your background image */
   background-size: cover; /* Cover the entire screen */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -25,7 +25,7 @@
 .home {
   text-align: center;
   padding: 20px 20px;
-  background-color: #e3690fa1;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.974);
   width: 85%;
@@ -57,6 +57,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 15px;
   animation: fadeIn 2s ease-in-out;
 }
@@ -102,19 +103,37 @@ p {
 /* Responsive design */
 @media (max-width: 768px) {
   .home {
-    padding: 10px 15px;
+    width: 90%;
+    margin: 150px 20px 50px 20px; /* Adjust margin for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
 
-  p {
-    font-size: 1rem;
+  .home-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px; /* Adds some space around the links */
+    margin: 0 auto; /* Centers the container */
+    max-width: 1200px; /* Limits the width for larger screens */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
-
-  .home-button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+  
+  .home-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color for readability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
   }
+  
+  .home-links a:hover {
+    color: #007bff; /* Change color on hover for interactivity */
+  }
+  
 }
