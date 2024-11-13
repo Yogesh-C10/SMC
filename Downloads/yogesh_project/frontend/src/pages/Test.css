@@ -1,0 +1,262 @@
+.test-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.test-header h1 {
+  font-size: 1.8em;
+  margin: 0;
+  text-align: center;
+}
+
+.timer {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.question-panel {
+  flex: 3;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* For positioning the buttons */
+}
+
+.options label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+.answer-tracker {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.question-btn {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.answered {
+  background-color: #007bff;
+  color: white;
+}
+
+.unanswered {
+  background-color: #ddd;
+}
+
+.marked {
+  background-color: #ffc107;
+  color: black;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  align-self: center; /* Centers the submit button */
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.result-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.result-page h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.result-page p {
+  font-size: 1.2em;
+}
+
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.prev-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: auto; /* Aligns the "Previous" button to the left */
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto; /* Centers the "Submit" button */
+  margin-right: auto;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto; /* Aligns the "Next" button to the right */
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mark for Review Button */
+.mark-for-review {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px; /* Adds space above the button */
+  width: 100%; /* Makes sure the button occupies full width */
+  transition: background-color 0.3s;
+  align-self: center; /* Centers the button horizontally */
+}
+
+.mark-for-review:hover {
+  background-color: #e0a800; /* Darkens the button color on hover */
+}
+
+/* Mark for Review Button */
+.mark-for-review-btn {
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.mark-for-review-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .test-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question-panel, .answer-tracker {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .questions-grid {
+    grid-template-columns: repeat(3, 1fr); /* Fewer columns for smaller screens */
+    gap: 8px;
+  }
+
+  .question-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Query for very small screens */
+@media (max-width: 480px) {
+  .timer {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  .question-panel {
+    padding: 10px;
+  }
+
+  .questions-grid {
+    grid-template-columns: repeat(2, 1fr); /* Fewer columns for extra-small screens */
+  }
+
+  .question-btn {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  .submit-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

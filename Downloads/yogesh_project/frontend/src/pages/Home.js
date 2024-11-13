@@ -10,9 +10,6 @@ function Home() {
         <p>Your one-stop platform for academic guidance, aptitude analysis, and counseling.</p>
         
         <div className="home-links">
-          <Link to="/signup">
-            <button className="home-button">Sign Up</button>
-          </Link>
           <Link to="/marks-analysis">
             <button className="home-button">Marks Analysis</button>
           </Link>

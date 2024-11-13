@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './AptitudeTestList.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import './AptitudeTestList.css'; // Keep the existing CSS import
 
 function AptitudeTestList() {
   const [score, setScore] = useState(null);
@@ -7,10 +8,8 @@ function AptitudeTestList() {
 
   // List of available tests
   const tests = [
-    'Aptitude Test (Random Questions)',
-    'Aptitude Test 1',
-    'Aptitude Test 2',
-    
+    { name: 'Aptitude Test 1', link: '/test1' },
+    { name: 'Aptitude Test 2', link: '/test2' },
   ];
 
   // Function to simulate taking a test
@@ -33,12 +32,11 @@ function AptitudeTestList() {
       {tests.map((test, index) => (
         <div key={index} className="test-card">
           <div className="test-details">
-            <h3>{test}</h3>
-            <p>Questions: 20 &nbsp; • &nbsp; 30 minutes</p>
+            <h3>{test.name}</h3>
           </div>
-          <button className="take-test-btn" onClick={() => takeTest(test)}>
-            Take Test
-          </button>
+          <Link to={test.link}>
+            <button className="take-test-btn" onClick={() => takeTest(test.name)}>Take Test</button>
+          </Link>
         </div>
       ))}
 
