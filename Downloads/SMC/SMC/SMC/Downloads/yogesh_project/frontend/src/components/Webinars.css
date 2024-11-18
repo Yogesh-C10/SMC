@@ -1,0 +1,91 @@
+/* Webinars.css */
+
+/* General styling for the container */
+.webinars-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Section headings */
+  .webinars-container h2 {
+    font-size: 2rem;
+    color: #4CAF50; /* A calming green for section headers */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  /* Style for the list of webinars or counseling sessions */
+  .webinar-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between items */
+    margin-bottom: 50px; /* Space between the two sections */
+  }
+  
+  /* Individual webinar or counselor box */
+  .webinar-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px); /* Responsive sizing */
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for boxes */
+  .webinar-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling inside boxes */
+  .webinar-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Text styling for details inside boxes */
+  .webinar-box p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Highlight key information */
+  .webinar-box p strong {
+    color: #333;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .webinar-box {
+      flex: 1 1 calc(45% - 20px);
+    }
+  
+    .webinar-list {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .webinar-box {
+      flex: 1 1 100%;
+    }
+  
+    .webinars-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .webinar-box h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
