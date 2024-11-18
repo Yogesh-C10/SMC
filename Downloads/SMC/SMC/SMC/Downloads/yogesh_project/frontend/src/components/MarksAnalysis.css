@@ -1,0 +1,132 @@
+.marks-analysis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8faff;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00509e;
+  margin-bottom: 20px;
+}
+
+.marks-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="number"] {
+  width: 150px;
+  padding: 10px;
+  border: 2px solid #0077b3;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+button {
+  background-color: #00509e;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+  width: auto;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+hr.divider-line {
+  width: 80%;
+  border: 0.5px solid #0077b3;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.y-axis-label {
+  position: absolute;
+  left: -60px; /* Move further left (negative value) or right (positive value) */
+  top: 80px;
+  font-size: 1.0rem;
+  color: #00509e;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.graph-bars {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.graph-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graph-bar {
+  width: 40px;
+  background-color: #0077b3;
+  transition: height 0.5s;
+  border-radius: 5px 5px 0 0;
+}
+
+.x-axis-label {
+  margin-top: 5px;
+  font-size: 1.0rem;
+  color: #333;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .marks-analysis-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  input[type="number"] {
+    width: 120px; /* Adjust width for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    padding: 6px 15px; /* Adjust padding for smaller screens */
+  } 
+} 
+
